@@ -9,7 +9,7 @@ resource "aws_subnet" "private_subnet" {
   }
 }
 
-# Route Table for Private Subnet
+# Route Table for Private Subnet.
 resource "aws_route_table" "private_subnet_route_table" {
   vpc_id = "${aws_vpc.rtp03-vpc.id}"
 }
